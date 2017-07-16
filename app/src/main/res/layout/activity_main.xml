@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="bool"
+            type="Boolean"/>
+    </data>
+
+    <android.support.percent.PercentRelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context="io.almayce.dev.radiovatan.MainActivity">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="70%" />
+
+        <ImageView
+            android:id="@+id/playStop"
+            android:onClick="onPlayStopClick"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/stop_btn"
+            app:layout_heightPercent="15%"
+            app:layout_marginTopPercent="55%"
+            app:layout_widthPercent="20%" />
+
+        <ImageView
+            android:id="@+id/loading"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/loading"
+            app:layout_heightPercent="15%"
+            app:layout_marginTopPercent="55%"
+            app:layout_widthPercent="20%" />
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            app:layout_heightPercent="10%">
+
+            <ImageView
+                android:contentDescription="vk"
+                android:onClick="onSocialClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/vk" />
+
+            <ImageView
+                android:contentDescription="tw"
+                android:onClick="onSocialClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/tw" />
+
+            <ImageView
+                android:contentDescription="fb"
+                android:onClick="onSocialClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/fb" />
+
+            <ImageView
+                android:contentDescription="in"
+                android:onClick="onSocialClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/in" />
+
+            <ImageView
+                android:contentDescription="yt"
+                android:onClick="onSocialClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/yt" />
+
+
+        </LinearLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+</layout>
+
